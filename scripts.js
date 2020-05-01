@@ -9,8 +9,13 @@ let name = 'Adam';
 let age = 34;
 
 function myLittleFunction() {
+    // condition: number of ps is smaller than 5
+    // <, >, and, or, <=, >=, ===, !==
+    if ($('p').length < 5) {
   $('main').append('<p>A p is appended in the main.</p>');
+    } else { 
   $('p').css('border', '1px solid red');
+    }
   $('p').css('padding', '10px');
 }
 
@@ -22,6 +27,38 @@ $('#remove').click(function () {
   $('p:last-child').remove();
 });
 
+//Fourth part:
+
+// if (condition that true or false) {
+    // condition is true
+// } else {
+    // condition is false
+// }
+
+let colors = ['orange', 'yellow', 'blue', 'lime', 'magenta']
+
+colors.forEach(function (color) {
+  $('#box-container').append('<div class="box"></div>');
+  $('.box:last-child').css('background', color);    
+});
+
+for (let i = 0; i < 100; i= i + 1) {
+  console.log ('I will not cheat on the exam');
+}
+
+/*
+$('#box-container').append('<div class="box"><(/div>');
+$('.box:last-child').css('background', colors[0]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[1]);
+$('#box-container').append('<div class="box"><(/div>');
+$('.box:last-child').css('background', colors[2]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[3]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[4]);
+*/
+
 // Single line comment
 
 /*
@@ -31,6 +68,7 @@ $('#remove').click(function () {
 */
 
 // First part:
+/*
 1+1
 2
 25*5
@@ -136,3 +174,4 @@ person.food = 'pizza'
 "pizza"
 person
 {name: "Peti", age: 34, favoriteColors: Array(7), oldEnoughToDrive: true, food: "pizza"}
+*/
